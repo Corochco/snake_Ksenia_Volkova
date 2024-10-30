@@ -1,6 +1,10 @@
-import pygame
+import subprocess
 import sys
 import random
+import pygame
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pygame"])
 
 
 class GameObject:
